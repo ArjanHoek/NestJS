@@ -29,11 +29,11 @@ export class UsersService {
 
   createUser(createUserDto: CreateUserDto): User {
     const newUser = {
-      id: this.users[this.users.length].id + 1,
+      id: this.users[this.users.length - 1].id + 1,
       ...createUserDto,
     };
 
-    this.users.push();
+    this.users.push(newUser);
     return newUser;
   }
 }
