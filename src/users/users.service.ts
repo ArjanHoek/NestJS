@@ -7,19 +7,24 @@ export class UsersService {
   private users: User[] = [
     {
       id: 1,
-      name: 'Flipje Flinkers',
+      name: 'Flip',
     },
     {
       id: 2,
-      name: 'Anna Anderlecht',
+      name: 'Anna',
     },
     {
       id: 3,
-      name: 'Rini Rinsema',
+      name: 'Rini',
     },
   ];
 
-  getUsers(): User[] {
+  getUsers(name?: string): User[] {
+    if (name) {
+      return this.users.filter(
+        (user) => user.name.toLowerCase() === name.toLowerCase(),
+      );
+    }
     return this.users;
   }
 
