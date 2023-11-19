@@ -1,12 +1,13 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
+import { Country } from './models/country.model';
 
-@Controller()
+@Controller('countries') // Using a path prefix in a @Controller() decorator allows us to easily group a set of related routes
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  @Get('all')
+  getCountires(): Country[] {
+    return this.appService.getCountries();
   }
 }
