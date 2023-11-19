@@ -74,4 +74,10 @@ Nest is [MIT licensed](LICENSE).
 
 ## Tutorial
 
-- https://www.youtube.com/watch?v=2n3xS89TJMI&t=2730s
+### Crash Course
+
+- https://www.youtube.com/watch?v=2n3xS89TJMI&t
+
+### GraphQL
+
+- https://www.youtube.com/watch?v=geYvdbpo3cA&list=PLlaDAvA2MhR2jb8zavu6I-w1BA878aHcB&index=8
