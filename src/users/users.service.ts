@@ -28,8 +28,8 @@ export class UsersService {
     return this.users;
   }
 
-  getUserById(id: number): User {
-    return this.users.find((user) => user.id === id);
+  getUserById(userId: number): User {
+    return this.users.find(({ id }) => id === userId);
   }
 
   createUser(createUserDto: CreateUserDto): User {
